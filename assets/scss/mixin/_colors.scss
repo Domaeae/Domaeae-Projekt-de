@@ -1,0 +1,31 @@
+$colors: (
+  color-primary: #3f51b5,
+  color-secondary: #3fb568,
+  color-warning: #de4f44,
+  color-dark: #212121,
+  palette-primary: #3c3d47,
+  palette-secondary: #3fc1c9,
+  palette-accent: #c65354,
+  palette-pink: #c51162,
+  palette-light: #f5f5f5,
+  palette-grey: #e0e0e0,
+  color1: #212121,
+  color2: #274060,
+  color3: #1f2041,
+  color4: #ee4266,
+  md1: #1b1e22,
+  md2: #3c54b4,
+  md3: #0463fb,
+  md4: #fc4444
+);
+
+$gardient-blue: linear-gradient(
+  50deg,
+  rgba(60, 84, 180, 1) 0%,
+  rgba(131, 78, 139, 1) 35%,
+  rgba(252, 68, 68, 1) 100%
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

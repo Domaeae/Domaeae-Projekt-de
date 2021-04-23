@@ -1,0 +1,366 @@
+// --- -= CSS-Buttons - All Classes
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+// Colors: .btn-primary .btn-dark .btn-warning
+// |-     .btn-outline-(color)
+// Sizing: .btn-lg  -  .btn-wide  -  .btn-block
+
+// Variablen \\
+$btn-font-family: $font-primary;
+$btn-font-weight: 300;
+$btn-font-size: 0.92em;
+$btn-padding: 0.375rem 0.75rem;
+$btn-transition: color 0.15s ease-in-out, background-color 0.25s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+// Buttons |&| Links \\
+.btn,
+.btn-icon {
+  font-family: $btn-font-family !important;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border: 0;
+  outline: 0 !important;
+  transition: $btn-transition !important;
+  // ----
+}
+
+button.btn {
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn:disabled {
+  opacity: 0.65;
+}
+
+.btn-icon {
+  i {
+    padding: 0 2px;
+    vertical-align: baseline;
+  }
+}
+// Sizing
+
+.btn-lg {
+  padding: 0.65rem 1.25rem;
+}
+
+.btn-wide {
+  padding: 0.07rem 15%;
+}
+
+.btn-block {
+  display: block;
+}
+
+// Colors
+// Primary
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: color(primary);
+  border: 0.06rem solid color(primary) !important;
+}
+
+.btn-outline-primary:hover {
+  color: #ffffff;
+  background-color: color(color-primary);
+}
+
+.btn-primary {
+  background-color: color(color-primary);
+  color: #ffff;
+}
+
+.btn-primary:hover {
+  background-color: color(color-primary);
+}
+
+// DARK
+.btn-dark {
+  background-color: color(color-dark);
+  color: #ffff;
+}
+
+.btn-dark:hover {
+  background-color: color(color-dark);
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: #000000;
+  border: 0.06rem solid !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: color(color-dark);
+  color: #ffffff;
+}
+
+// -= RIPPLE-EFFECT
+//
+.btn {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+.btn:active:after {
+  outline: 0;
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+// _________________________
+//   -=  bsbtn => modern Button-Class
+// ====================================
+
+.bsbtn {
+  font-family: $font-primary;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  // Testing|   padding: 0.65rem 1.3rem;
+  padding: 0.55rem 1.1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  outline: none;
+  font-size: 0.92em;
+}
+
+.bsbtn-mx {
+  margin-bottom: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+.bsbtn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.bsbtn-primary {
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #6967ce;
+  background-color: color(color-primary);
+
+  &:hover {
+    background-color: darken(color(color-primary), 8%);
+  }
+
+  &:focus {
+    background-color: lighten(color(color-primary), 8%);
+  }
+}
+
+.bsbtn-dark {
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #6967ce;
+  background-color: color(color1);
+
+  &:hover {
+    background-color: darken(color(color1), 8%);
+  }
+
+  &:focus {
+    background-color: lighten(color(color1), 8%);
+  }
+}
+
+// --=> Start w/ the Material-Buttons >>=>
+// Original Material-Design Button |
+.btn-md,
+.btn-md-primary {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  margin: 3px 0.5px;
+  min-width: 64px;
+  height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  text-decoration: none;
+  // color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  color: white;
+  // background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+  background-color: color(color-primary);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: "Roboto" !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.btn-md::-moz-focus-inner {
+  border: none;
+}
+
+/* Overlay */
+.btn-md::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: color(palette-light);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Ripple */
+.btn-md::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  padding: 50%;
+  width: 32px; /* Safari */
+  height: 32px; /* Safari */
+  // background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: color(palette-light);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 1s, transform 0.5s;
+}
+
+// .BTN-MD-{COLOR} - Other MD-Colorclasses
+.btn-md-warning {
+  color: white;
+  background-color: color(color-warning) !important;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: background-color 0.75s;
+
+  &:hover {
+    background-color: darken(color(color-warning), 15%) !important;
+  }
+}
+// -->--> PINk-BUTTOM -->-->
+.btn-md-pink {
+  color: white;
+  background-color: color(palette-pink) !important;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: background-color 0.75s;
+
+  &:hover {
+    background-color: darken(color(palette-pink), 15%) !important;
+  }
+}
+
+/* Hover, Focus */
+.btn-md:hover,
+.btn-md:focus {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn-md:hover::before {
+  opacity: 0.08;
+}
+
+.btn-md:focus::before {
+  opacity: 0.24;
+}
+
+.btn-md:hover:focus::before {
+  opacity: 0.3;
+}
+
+/* Active */
+.btn-md:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-md:active::after {
+  opacity: 0.32;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0s;
+}
+
+/* Disabled */
+.btn-md:disabled {
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+  background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+  box-shadow: none;
+  cursor: initial;
+}
+
+.btn-md:disabled::before {
+  opacity: 0;
+}
+
+.btn-md:disabled::after {
+  opacity: 0;
+}
