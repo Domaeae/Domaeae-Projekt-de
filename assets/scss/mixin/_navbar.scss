@@ -13,23 +13,36 @@
 
   a,
   a:visited {
+    font-family: $font-heading !important;
     text-decoration: none;
+    font-weight: 400;
+    color: $nav-brand-color;
   }
 
   .title {
+    font-family: $font-heading !important;
     // color: color(color-primary);
-    color: $nav-brand-color;
-    font-family: $font-secondary;
-    font-weight: 600;
+    display: inline-flex;
     font-size: 1.5em;
     letter-spacing: 1.55px;
     text-align: center;
 
-      img{
-        display: block;
-        width: 160px;
-        margin-top: 10px;
-      }
+    img {
+      display: block;
+      height: calc(70px - 10px);
+      // width: 160px;
+      margin-top: 6px;
+    }
+
+    .brand-text {
+    font-family: $font-heading;
+    font-weight: 500;
+    letter-spacing: normal;
+    padding: 0 0 0 7px;
+      line-height: $nav-height;
+      // font-family: $font-secondary;
+
+    }
   }
 }
 
@@ -42,25 +55,29 @@
 // Navigation
 nav {
   float: right;
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
     li {
       float: left;
       position: relative;
 
       a,
       a:visited {
+        font-family: $font-heading !important;
         display: block;
         padding: 0 20px;
         line-height: $nav-height;
         background: $nav-background;
         color: $nav-font-color;
         text-decoration: none;
+        transition: all 210ms cubic-bezier(0.24, 0.48, 1, 0.81);
 
         &:hover {
-          background: $link-hover-color;
+          background: color-palette(darktheme-primary);
           color: $nav-font-color;
         }
 
@@ -69,14 +86,16 @@ nav {
           content: " ▾";
         }
       }
+
       a.active {
-        background: $link-hover-color;
+        background: color-palette(darktheme-primary);
         color: $nav-font-color;
       }
 
       // Dropdown list
       ul li {
         min-width: 190px;
+
         a {
           padding: 15px;
           line-height: 20px;
@@ -87,9 +106,9 @@ nav {
 
   .nav-list {
     a {
-      font-size: 0.82rem;
-      font-family: $font-primary;
-      font-weight: 600;
+      font-size: 0.85rem;
+      font-family: $font-secondary !important;
+      font-weight: 700;
     }
   }
 }
@@ -123,43 +142,54 @@ nav {
     display: none;
   }
 }
+
 @media only screen and (max-width: 798px) {
+
   // Hamburger nav visible on mobile only
   .nav-mobile {
     display: block;
   }
+
   nav {
     width: 100%;
     padding: $nav-height 0 15px;
+
     ul {
       display: none;
+
       li {
         float: none;
+
         a {
           padding: 15px;
           line-height: 20px;
         }
+
         ul li a {
           padding-left: 30px;
         }
       }
     }
   }
+
   .nav-dropdown {
     position: static;
   }
 }
+
 @media screen and (min-width: $breakpoint) {
   .nav-list {
     display: block !important;
   }
 }
+
 #nav-toggle {
   position: absolute;
   left: 18px;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
+
   span,
   span:before,
   span:after {
@@ -173,21 +203,27 @@ nav {
     content: "";
     transition: all 300ms ease-in-out;
   }
+
   span:before {
     top: -10px;
   }
+
   span:after {
     bottom: -10px;
   }
+
   &.active span {
     background-color: transparent;
+
     &:before,
     &:after {
       top: 0;
     }
+
     &:before {
       transform: rotate(45deg);
     }
+
     &:after {
       transform: rotate(-45deg);
     }

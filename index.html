@@ -9,11 +9,11 @@
   <meta name="theme-color" content="#171717">
   <!-- Imports -->
   <link rel="stylesheet" href="./assets/css/master.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Muli:400,500,600,700,900&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Muli:400,500,600,700,900&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -23,10 +23,13 @@
     <div class="nav-container">
       <div class="brand">
         <!-- <a href="#!" class="title">Domaeae.de</a> -->
-        <a href="#!" class="title"><img src="./assets/img/logo/domaeae-wide-white.png" alt="logo"></a>
+        <!-- <a href="#!" class="title"><img src="./assets/img/logo/domaeae-wide-white.png" alt="logo"></a> -->
+        <a href="#!" class="title">
+          <img src="./assets/img/logo/android-chrome-96x96.png" alt="logo">
+          <span class="brand-text">Domaeae</span></a>
       </div>
 
-      <nav>
+      <nav> 
         <div class="nav-mobile">
           <a id="nav-toggle" href="#!"><span></span></a>
         </div>
@@ -37,10 +40,11 @@
           </li>
 
           <li>
-            <a href="#!">Projekte</a>
+            <a href="#">Projekte</a>
             <ul class="nav-dropdown">
               <li>
-                <a href="https://github.com/Domaeae" target="_blank"><i class='bx bxs-cloud bx-fw'></i>Github Profil</a></li>
+                <a href="https://github.com/Domaeae" target="_blank"><i class='bx bxs-cloud bx-fw'></i>Github Profil</a>
+              </li>
               <!-- <li>
                 <a href="#!"><i class='bx bxs-cloud bx-fw'></i>cloudHosting</a></li>
               <li> -->
@@ -59,6 +63,16 @@
   <main>
     <section id="content">
       <h1>Öffentliche Projekte:</h1>
+
+      <div class="card">
+        <section class="card-content">
+
+          <p style="font-family: 'Ubuntu', sans-serif !important;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p style="font-family: 'Comfortaa', sans-serif !important;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p style="font-family: 'Muli', sans-serif !important;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        </section>        
+      </div>
     </section>
 
   </main>

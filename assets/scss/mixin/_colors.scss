@@ -19,6 +19,14 @@ $colors: (
   md4: #fc4444
 );
 
+$color-palettes: (
+  darktheme-primary: #BB86FC,
+  darktheme-secondary: #ee98fb,
+  darktheme-red: #ef476fff,
+  darktheme-bg: #121212,
+  theme-blue: #5465ff
+);
+
 $gardient-blue: linear-gradient(
   50deg,
   rgba(60, 84, 180, 1) 0%,
@@ -28,4 +36,8 @@ $gardient-blue: linear-gradient(
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
+}
+
+@function color-palette($col-nam) {
+  @return map-get($color-palettes, $col-nam);
 }

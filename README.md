@@ -18,11 +18,14 @@
 
 - ## Heading + Card-style
 
- ```<section id="home" tabindex="1">
+ ```
+ <section id="content">
+    <section id="home">
       <h1>Cloud-Server and Wordpress/ -Hosting</h1>
       <div class="card">
         <h3>Info-Modal</h3>
       </div>
       <a href="#!" id="btn_getinfos" class="bsbtn bsbtn-dark">More Infos</a>
-    </section>     
+    </section>
+</section>     
 ```
