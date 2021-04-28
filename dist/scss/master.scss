@@ -1,0 +1,81 @@
+$font-heading: "Ubuntu", sans-serif;
+$font-primary: "Comfortaa", serif;
+$font-secondary: "Muli", sans-serif; // ---<> ----
+@import "mixin/_colors.scss";
+@import "mixin/var.scss";
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	// font-family: $font-secondary;
+}
+
+main {
+	width: 85vw;
+	margin: 0 auto;
+	padding-top: 45px;
+	background: color(palette-dark);
+
+	#kontakt {
+		width: 75vw;
+		margin: 0 auto;
+
+		h1 {
+			font-family: $font-primary !important;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+
+		.kontakt-ul {
+			list-style: none;
+			width: 45vw;
+			margin: 0 auto;
+
+			.kontakt-list {
+				display: -webkit-inline-flex;
+				display: -ms-inline-flex;
+				display: inline-flex;
+				width: 100%;
+
+				& div {
+					width: 50%;
+				}
+			}
+
+			.kontakt-list--head {
+				padding: 15px;
+
+				h3 {
+					font-family: $font-primary;
+					font-size: 1.1em;
+					font-weight: 700;
+					text-decoration: underline;
+					text-align: right;
+				}
+			}
+
+			.kontakt-list--body {
+				padding: 15px;
+
+				h5 {
+					font-family: $font-primary;
+					font-size: 0.8em;
+					font-weight: 700;
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	#home {
+		width: 85vw;
+		height: 345px;
+		margin: 0 auto;
+	}
+}
+// end
+@import "mixin/_navbar.scss";
+@import "mixin/_buttons.scss";
+@import "mixin/_cards.scss";
