@@ -1,88 +1,117 @@
 <!DOCTYPE html>
 <html lang="de" data-color-mode="dark" data-dark-theme="dark_dimmed">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>domaeae|de</title>
-		<meta name="theme-color" content="#121212">
-		<!-- Imports -->
-		<link rel="stylesheet" href="./assets/css/master.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Muli:400,500,600,700">
-		<link rel="stylesheet" href="./node_modules/boxicons/css/boxicons.min.css">
-		<!-- <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet"/> -->
-	</head>
 
-	<body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>domaeae|de</title>
+	<meta name="theme-color" content="#121212">
+	<!-- Imports -->
+	<link rel="stylesheet" href="./assets/css/master.min.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Muli:400,500,600,700">
+	<link rel="stylesheet" href="./node_modules/boxicons/css/boxicons.min.css">
+	<!-- <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet"/> -->
+</head>
 
-		<!-- 1| Full-Respons. Navbar -->
-		<section class="navigation">
-			<div class="nav-container">
-				<div class="brand">
-					<!-- <a href="#!" class="title">Domaeae.de</a> -->
-					<!-- <a href="#!" class="title"><img src="./assets/img/logo/domaeae-wide-white.png" alt="logo"></a> -->
-					<a href="#!" class="title">
-						<img src="./assets/img/logo/android-chrome-96x96.png" alt="logo" width="60" height="60">
-						<span class="brand-text">Domaeae</span></a>
+<body>
+
+	<!-- 1| Full-Respons. Navbar -->
+	<section class="navigation">
+		<div class="nav-container">
+			<div class="brand">
+				<!-- <a href="#!" class="title">Domaeae.de</a> -->
+				<!-- <a href="#!" class="title"><img src="./assets/img/logo/domaeae-wide-white.png" alt="logo"></a> -->
+				<a href="#!" class="title">
+					<img src="./assets/img/logo/android-chrome-96x96.png" alt="logo" width="60" height="60">
+					<span class="brand-text">Domaeae</span></a>
+			</div>
+
+			<nav>
+				<div class="nav-mobile">
+					<a id="nav-toggle" href="#!">
+						<span></span></a>
 				</div>
+				<ul class="nav-list">
 
-				<nav>
-					<div class="nav-mobile">
-						<a id="nav-toggle" href="#!">
-							<span></span></a>
-					</div>
-					<ul class="nav-list">
+					<li>
+						<a href="./index.html" class="active">
+							<i class='bx bx-home-alt bx-fw'></i>Home</a>
+					</li>
 
-						<li>
-							<a href="./index.html" class="active">
-								<i class='bx bx-home-alt bx-fw'></i>Home</a>
-						</li>
+					<li>
+						<a href="#">Projekte</a>
+						<ul class="nav-dropdown">
+							<li>
+								<a href="https://github.com/Domaeae" target="_blank">
+									<i class='bx bxs-cloud bx-fw'></i>Github Profil</a>
+							</li>
+							<!-- <li> <a href="#!"><i class='bx bxs-cloud bx-fw'></i>cloudHosting</a></li> <li> -->
+						</ul>
+					</li>
 
-						<li>
-							<a href="#">Projekte</a>
-							<ul class="nav-dropdown">
-								<li>
-									<a href="https://github.com/Domaeae" target="_blank">
-										<i class='bx bxs-cloud bx-fw'></i>Github Profil</a>
-								</li>
-								<!-- <li> <a href="#!"><i class='bx bxs-cloud bx-fw'></i>cloudHosting</a></li> <li> -->
-							</ul>
-						</li>
+					<li>
+						<a href="./sites/kontakt.html">Kontakt &nbsp;<i class='bx bx-mail-send bx-fw'></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
 
-						<li>
-							<a href="./sites/kontakt.html">Kontakt &nbsp;<i class='bx bx-mail-send bx-fw'></i>
-							</a>
-						</li>
-					</ul>
-				</nav>
+	<!-- 2| main => Content & Components -->
+	<main>
+		<section id="content">
+			<h1>Öffentliche Projekte:</h1>
+
+			<div class="card">
+				<section class="card-content">
+
+					<p style="font-family: 'Ubuntu', sans-serif !important; font-size: 2em; font-weight: 600;">Lorem
+						ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p style="font-family: 'Comfortaa', sans-serif !important; font-size: 2em; font-weight: 600;">Lorem
+						ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p style="font-family: 'Muli', sans-serif !important; font-size: 2em; font-weight: 600;">Lorem ipsum
+						dolor sit amet consectetur adipisicing elit.</p>
+
+				</section>
+
+				<br><br><br><br>
+
+				<form name="contact" method="POST" data-netlify="true">
+					<p>
+						<label>Your Name: <input type="text" name="name" /></label>
+					</p>
+					<p>
+						<label>Your Email: <input type="email" name="email" /></label>
+					</p>
+					<p>
+						<label>Your Role: <select name="role[]" multiple>
+								<option value="leader">Leader</option>
+								<option value="follower">Follower</option>
+							</select></label>
+					</p>
+					<p>
+						<label>Message: <textarea name="message"></textarea></label>
+					</p>
+					<p>
+						<button type="submit">Send</button>
+					</p>
+				</form>
 			</div>
 		</section>
+	</main>
 
-		<!-- 2| main => Content & Components -->
-		<main>
-			<section id="content">
-				<h1>Öffentliche Projekte:</h1>
+	<!-- <a href="#!" class="bsbtn bsbtn-primary bsbtn-mx">Primary Button used for nothing.</a> -->
 
-				<div class="card">
-					<section class="card-content">
-
-						<p style="font-family: 'Ubuntu', sans-serif !important; font-size: 2em; font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-						<p style="font-family: 'Comfortaa', sans-serif !important; font-size: 2em; font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-						<p style="font-family: 'Muli', sans-serif !important; font-size: 2em; font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-					</section>
-				</div>
-			</section>
-		</main>
-
-		<!-- <a href="#!" class="bsbtn bsbtn-primary bsbtn-mx">Primary Button used for nothing.</a> -->
-
-		<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> -->
-		<script src="app.js"></script>
-		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="./assets/js/app.min.js" charset="utf-8" defer="true"></script>
-		<script src="./assets/js/navbar.min.js" charset="utf-8"></script>
-	</body>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> -->
+	<script src="app.js"></script>
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="./assets/js/app.min.js" charset="utf-8" defer="true"></script>
+	<script src="./assets/js/navbar.min.js" charset="utf-8"></script>
+</body>
 
 </html>
