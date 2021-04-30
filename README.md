@@ -35,3 +35,5 @@
 # Links & Sites in this Project
 
 - https://github.com/Necromancerx/media-queries-scss-mixins
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5cfd2321-7fb1-499d-b698-8c2c3056d23a/deploy-status)](https://app.netlify.com/sites/domaeae/deploys)

@@ -1,15 +1,16 @@
 {
   "name": "domaeae-web",
   "version": "1.0.0",
-  "description": "This is a dummy package.json file created by Prepros to manage packages with NPM. You can edit this file to add your own information.",
+  "description": "My Website about my projects.",
   "dependencies": {
     "boxicons": "^2.0.7",
+    "express": "4.17.1",
     "jquery": "^3.6.0"
   },
-  "main": "app.js",
+  "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,5 @@
   "bugs": {
     "url": "https://github.com/Domaeae/Domaeae-Projekt-de/issues"
   },
-  "homepage": "https://github.com/Domaeae/Domaeae-Projekt-de#readme"
+  "homepage": "https://app.domaeae.de/README.md"
 }
