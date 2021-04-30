@@ -17,10 +17,7 @@ $(function () {
     $(this).toggleClass("active");
   });
 
-// btn.on("", function () {});
-btn.on("transitionend", toggleClass);
-btn.on("transitionend", addClass);
-  // btn.addEventListener("transitionend", toggleClass);
-  // btn.addEventListener("transitionend", addClass);
+  btn.on("transitionend", toggleClass);
+  btn.on("transitionend", addClass);
 
 });

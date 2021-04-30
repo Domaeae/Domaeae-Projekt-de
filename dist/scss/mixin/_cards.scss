@@ -36,7 +36,7 @@
     // font-family: $font-primary;
     font-weight: normal;
     font-size: 0.9em;
-    padding: 15px 25px;
+    padding: 20px 25px;
   }
 }
 
@@ -45,7 +45,6 @@
   ===================== */
 #content {
   h2.content-heading {
-    // font-family: $font-heading !important;
     font-family: $font-heading;
     text-decoration: underline;
   }
@@ -54,9 +53,21 @@
   width: 85vw;
   margin: 0 auto;
   padding: 15px 0;
+
+  h3 {
+    font-family: $font-secondary;
+    font-size: 1.51em;
+    margin: 15px 0 7px 0;
+    letter-spacing: 0.05em;
+    // text-decoration: underline;
+  }
+
+  p {
+    font-family: $font-primary;
+    font-size: 1.1em;
+  }
 }
 /*  ====================/>  */
-
 
 @keyframes onloadfadeIn {
   0% {
