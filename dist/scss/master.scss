@@ -1,11 +1,13 @@
 // ---< domaeae.de <|> master.css > ----
 $font-heading: "Ubuntu", sans-serif;
 $font-primary: "Comfortaa", serif;
-$font-secondary: "Muli", sans-serif;
-// ---<> ----
+$font-secondary: "Mu  li", sans-serif;
+// -- -<>-  ---
 @import "mixin/_colors.scss";
 @import "mixin/var.scss";
 @import "layout/responsive.scss";
+@import "layout/container.scss";
+// --- <> ----
 
 body,
 html {
@@ -13,6 +15,12 @@ html {
   padding: 0;
   border: 0;
   // font-family: $font-secondary;
+
+  & * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 main {
@@ -76,6 +84,29 @@ main {
     width: 85vw;
     height: 345px;
     margin: 0 auto;
+  }
+
+  .card-1 {
+    box-sizing: border-box;
+    padding: 5px 30px;
+    word-wrap: break-word;
+    box-shadow: 8px 10px 16px rgba(62, 57, 107, 10%);
+    border-radius: 9px;
+    justify-content: space-between;
+    // margin: 0 5px;
+    // height: 100%;
+    // flex-direction: column;
+    // min-width: 0;
+
+    /*  .col-heading {}*/
+    .col-body {
+      height: 100%;
+      transform: translate(25%, 50%);
+      // img {
+      // position: relative;
+      // top: calc(100% / 3);
+      // }
+    }
   }
 }
 
