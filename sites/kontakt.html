@@ -1,93 +1,120 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-color-mode="dark" data-dark-theme="dark_dimmed">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Domaeae|de</title>
+  <title>domaeae|de</title>
   <meta name="theme-color" content="#121212">
   <!-- Imports -->
-  <link rel="stylesheet" href="../assets/css/master.css">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,500,600,700,900&display=swap" rel="stylesheet">
-
-    <!-- <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Muli:400,500,600,700,900&display=swap" rel="stylesheet"> -->
-
-
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="../assets/css/master.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,500,600,700">
+  <link rel="stylesheet" href="../node_modules/boxicons/css/boxicons.min.css">
+  <!-- <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet"/> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
 </head>
+
 <body>
 
-  <!-- Full-Respons. Navbar -->
+  <!-- 1| Full-Respons. Navbar -->
   <section class="navigation">
     <div class="nav-container">
       <div class="brand">
         <!-- <a href="#!" class="title">Domaeae.de</a> -->
         <!-- <a href="#!" class="title"><img src="./assets/img/logo/domaeae-wide-white.png" alt="logo"></a> -->
-        <a href="#!" class="title">
-          <img src="../assets/img/logo/android-chrome-96x96.png" alt="logo">
+        <a href="../index.html" class="title">
+          <img src="../assets/img/logo/android-chrome-96x96.png" alt="logo" role="img" width="60" height="60">
           <span class="brand-text">Domaeae</span></a>
       </div>
 
-      <nav> 
+      <nav role="navigation">
         <div class="nav-mobile">
-          <a id="nav-toggle" href="#!"><span></span></a>
+          <a id="nav-toggle" href="#!">
+            <span></span></a>
         </div>
         <ul class="nav-list">
 
           <li>
-            <a href="../index.html"><i class='bx bx-home-alt bx-fw'></i>Home</a>
+            <a href="../index.html">
+              <!-- <i class='bx bx-home-alt bx-fw'></i> --><i class='bx bxs-home bx-fw'></i>Home</a>
           </li>
 
           <li>
             <a href="#">Projekte</a>
             <ul class="nav-dropdown">
               <li>
-                <a href="https://github.com/Domaeae" target="_blank"><i class='bx bxs-cloud bx-fw'></i>Github Profil</a>
+                <a href="https://github.com/Domaeae" target="_blank">
+                  <i class='bx bxs-cloud bx-fw'></i>Github Profil</a>
               </li>
-              <!-- <li>
-                <a href="#!"><i class='bx bxs-cloud bx-fw'></i>cloudHosting</a></li>
-              <li> -->
+              <!-- <li> <a href="#!"><i class='bx bxs-cloud bx-fw'></i>cloudHosting</a></li> <li> -->
             </ul>
           </li>
-
           <li>
-            <a href="./pages/kontakt.html" class="active">Kontakt &nbsp;<i class='bx bx-mail-send bx-fw'></i></a>
+            <a href="#!" class="active">Kontakt &nbsp;<i class='bx bx-mail-send bx-fw'></i></a></li>
+          <li>
+            <a href="#login">&nbsp;<i class='bx bx-user-circle bx-fw'></i></a>
           </li>
         </ul>
       </nav>
     </div>
   </section>
 
+  <!-- 2| main => Content & Components -->
   <main>
-    <section id="kontakt">
-      <h1>Kontaktdaten:</h1>
-      <ul class="kontakt-ul">
-        <li class="kontakt-list">
-          <div class="kontakt-list--head"><h3>Name:</h3></div>
-          <div class="kontakt-list--body"><h5>Dominik Girrbach</h5></div>
-        </li>
-        <li class="kontakt-list">
-          <div class="kontakt-list--head"><h3>Language:</h3></div>
-          <div class="kontakt-list--body"><h5>German</h5></div>
-        </li>
-        <li class="kontakt-list">
-          <div class="kontakt-list--head"></div>
-          <div class="kontakt-list--body"></div>
-        </li>
-      </ul>
-    </section>
+    <section id="content">
+      <h2 class="content-heading">Kontakt</h2>
 
+      <div class="card">
+        <section class="card-content">
+
+          <form name="contact" data-netlify="true" method="POST" action="/success">
+            <!-- <form name="contact" method="POST" data-netlify="true" action="/success"> -->
+
+            <div class="form-group" style="display: inline-flex;">
+
+              <p style="padding-right: 15px;">
+                <label>Vorname: <input type="text" name="Vorname" autocomplete="given-name" /></label>
+              </p>
+              <p>
+                <label>Nachname: <input type="text" name="name" autocomplete="family-name" /></label>
+              </p>
+            </div>
+            <p>
+              <label>Email:&nbsp;<input type="email" name="email" autocomplete="email"
+                  style="margin-left: 15px;" /></label>
+            </p>
+            <p>
+              <label>Deine Nachricht: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <div class="btn-container">
+                <button class="form-button">
+                  <span class="form-submit">Senden</span>
+                  <span class="form-loading"><i class='bx bx-loader-alt' ></i></span>
+                  <span class="form-check"><i class='bx bx-check-double' ></i></span>
+                </button>
+              </div>
+            </p>
+          </form>
+
+
+        </section>
+      </div>
+    </section>
   </main>
 
   <!-- <a href="#!" class="bsbtn bsbtn-primary bsbtn-mx">Primary Button used for nothing.</a> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-  <script src="../assets/js/navbar.js" charset="utf-8"></script>
-  <!-- <script src="../assets/js/navbar.min.js" charset="utf-8"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> -->
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- TODO:  -->
+  <!-- TODO: "main.jS into assets/.." -->
+  <script src="../dist/main.js"></script>
+  <script src="../assets/js/navbar.min.js"></script>
 </body>
+
 </html>

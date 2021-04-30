@@ -31,9 +31,19 @@
   box-shadow: 8px 10px 16px rgba(62, 57, 107, 10%);
 
   .card-content{
-    font-family: "Muli", sans-serif !important;  
+    // font-family: $font-secondary !important;  
+    // font-family: $font-primary;
     font-weight: normal;
     font-size: 0.9em;
     padding: 15px 25px;
+  }
+}
+
+#content{
+  h2.content-heading{
+    // font-family: $font-heading !important;
+    font-family: $font-heading;
+    text-decoration: underline;
+
   }
 }

@@ -1,21 +1,26 @@
-import "remixicon/fonts/remixicon.css"
+$(function () {
+  const btn = $(".form-button");
+  const btn_submit = $('.form-submit');
 
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
+  function toggleClass() {
+    this.classList.toggle("active");
+  }
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({
-      "form-name": event.target.getAttribute("name"),
-      ...name,
-    }),
-  })
-    .then(() => navigate("/thank-you/"))
-    .catch((error) => alert(error));
-};
+  function addClass() {
+    this.classList.add("finished");
+    btn_submit.text("");
+    console.log("Message send!");
+  }
+
+  btn.click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+  });
+
+// btn.on("", function () {});
+btn.on("transitionend", toggleClass);
+btn.on("transitionend", addClass);
+  // btn.addEventListener("transitionend", toggleClass);
+  // btn.addEventListener("transitionend", addClass);
+
+});

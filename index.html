@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Muli:400,500,600,700">
 	<link rel="stylesheet" href="./node_modules/boxicons/css/boxicons.min.css">
 	<!-- <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet"/> -->
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 					<span class="brand-text">Domaeae</span></a>
 			</div>
 
-			<nav>
+			<nav role="navigation">
 				<div class="nav-mobile">
 					<a id="nav-toggle" href="#!">
 						<span></span></a>
@@ -39,7 +39,8 @@
 				<ul class="nav-list">
 
 					<li>
-						<a href="./index.html" class="active"><!-- <i class='bx bx-home-alt bx-fw'></i> --><i class="ri-home-2-line ri-fw"></i>Home</a>
+						<a href="./index.html" class="active">
+							<!-- <i class='bx bx-home-alt bx-fw'></i> --><i class='bx bxs-home bx-fw'></i>Home</a>
 					</li>
 
 					<li>
@@ -52,10 +53,12 @@
 							<!-- <li> <a href="#!"><i class='bx bxs-cloud bx-fw'></i>cloudHosting</a></li> <li> -->
 						</ul>
 					</li>
-
 					<li>
 						<a href="./sites/kontakt.html">Kontakt &nbsp;<i class='bx bx-mail-send bx-fw'></i>
 						</a>
+					</li>
+					<li>
+						<a href="#login">&nbsp;<i class='bx bx-user-circle bx-fw'></i></a>
 					</li>
 				</ul>
 			</nav>
@@ -98,7 +101,12 @@
 						<label>Message: <textarea name="message"></textarea></label>
 					</p>
 					<p>
-						<button type="submit">Send</button>
+						<!-- <button type="submit">Send</button> -->
+						<button class="button">
+							<span class="submit">Nachricht senden</span>
+							<span class="loading"><i class="fa fa-refresh"></i></span>
+							<span class="check"><i class="fa fa-check"></i></span>
+						</button>
 					</p>
 				</form>
 			</div>
@@ -108,11 +116,11 @@
 	<!-- <a href="#!" class="bsbtn bsbtn-primary bsbtn-mx">Primary Button used for nothing.</a> -->
 
 	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> -->
-	<script src="app.js"></script>
 	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="./assets/js/navbar.min.js"></script>t
+	<script src="./assets/"></script>
 	<!-- <script src="./assets/js/app.min.js" charset="utf-8" defer="true"></script> -->
-	<script src="./assets/js/navbar.min.js" charset="utf-8"></script>
-<script src="./dist/main.js"></script>
+	<!-- <script src="./dist/main.js"></script> -->
 </body>
 
 </html>
