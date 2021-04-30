@@ -29,3 +29,9 @@
     </section>
 </section>     
 ```
+
+` © Copyright  2021 Domaeae`  
+
+# Links & Sites in this Project
+
+- https://github.com/Necromancerx/media-queries-scss-mixins

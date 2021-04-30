@@ -1,0 +1,1 @@
+$((function(){const t=$(".form-button"),n=$(".form-submit");t.click((function(t){t.preventDefault(),$(this).toggleClass("active")})),t.on("transitionend",(function(){this.classList.toggle("active")})),t.on("transitionend",(function(){this.classList.add("finished"),n.text(""),console.log("Message send!")}))}));
