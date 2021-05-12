@@ -125,11 +125,11 @@ nav {
     border-bottom-right-radius: 7px;
   }
 }
-
+/*
 /* Mobile navigation */
 
 // Binds to JS Toggle
-.nav-mobile {
+/*.nav-mobile {
   display: none;
   position: absolute;
   top: 0;
@@ -188,9 +188,9 @@ nav {
 }
 
 #nav-toggle {
-  position: absolute;
-  left: 18px;
-  top: 22px;
+  position: absolute !important;
+  left: 18px !important ;
+  top: 22px !important;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 
@@ -218,7 +218,7 @@ nav {
   }
 
   &.active span {
-    background-color: transparent;
+    top: 5px !important;
 
     &:before,
     &:after {
@@ -234,10 +234,53 @@ nav {
     }
   }
 }
+V.1
+*/
 
 // Page content
 article {
   max-width: $content-width;
   margin: 0 auto;
   padding: 10px;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+  align-self: flex-end;
+  display: initial;
+  position: absolute;
+  cursor: pointer;
+}
+
+.nav-mobile {
+  display: none;
+}
+@media only screen and (min-width: 798px) {
+}
+
+@media only screen and (max-width: 798px) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 999;
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+#nav-toggle {
+  position: absolute !important;
+  left: 0px !important ;
+  top: 0px !important;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
 }

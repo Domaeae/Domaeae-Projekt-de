@@ -1,0 +1,71 @@
+// ---< domaeae.de <|> container.css > ----
+
+[class^="col-"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  //   background-color: #eee;
+  //   border: 1px solid #ccc;
+}
+
+[class^="col-"] {
+  overflow: hidden;
+}
+
+.flexme {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  justify-content: flex-end;
+
+  @for $i from 1 through 12 {
+    [class*="col-xs-#{$i}"] {
+      flex: $i 0 (100% / 12 * $i);
+    }
+
+    [class*="col-xs-#{$i}"]:last-child {
+      flex: 0 0 (100% / 12 * $i);
+    }
+  }
+
+  @media (min-width: 768px) {
+    @for $i from 1 through 12 {
+      [class*="col-sm-#{$i}"] {
+        flex: $i 0 (100% / 12 * $i);
+      }
+
+      [class*="col-sm-#{$i}"]:last-child {
+        flex: 0 0 (100% / 12 * $i);
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    @for $i from 1 through 12 {
+      [class*="col-md-#{$i}"] {
+        flex: $i 0 (100% / 12 * $i);
+      }
+
+      [class*="col-md-#{$i}"]:last-child {
+        flex: 0 0 (100% / 12 * $i);
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    @for $i from 1 through 12 {
+      [class*="col-lg-#{$i}"] {
+        flex: $i 0 (100% / 12 * $i);
+      }
+
+      [class*="col-lg-#{$i}"]:last-child {
+        flex: 0 0 (100% / 12 * $i);
+      }
+    }
+  }
+}

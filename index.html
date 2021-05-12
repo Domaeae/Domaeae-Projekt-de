@@ -7,14 +7,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>domaeae|de</title>
+	<!-- use Favicon -->
 	<meta name="theme-color" content="#121212">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="194x194" href="/assets/img/logo/favicon-194x194.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/logo/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logo/favicon-16x16.png">
+	<link rel="manifest" href="/assets/img/logo/site.webmanifest">
+	<link rel="mask-icon" href="/assets/img/logo/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/assets/img/logo/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Domaeae">
+	<meta name="application-name" content="Domaeae">
+	<meta name="msapplication-TileColor" content="#b91d47">
+	<meta name="msapplication-TileImage" content="/assets/img/logo/mstile-144x144.png">
+	<meta name="msapplication-config" content="/assets/img/logo/browserconfig.xml">
 	<!-- Imports -->
 	<link rel="stylesheet" href="./assets/css/master.min.css">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,500,600,700">
-	<link rel="stylesheet" href="./node_modules/boxicons/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
 </head>
 
 <body>
@@ -26,14 +40,13 @@
 				<!-- <a href="#!" class="title">Domaeae.de</a> -->
 				<!-- <a href="#!" class="title"><img src="./assets/img/logo/domaeae-wide-white.png" alt="logo"></a> -->
 				<a href="#!" class="title">
-					<img src="./assets/img/logo/android-chrome-96x96.png" alt="logo" width="60" height="60">
+					<img src="./assets/img/logo/android-chrome-192x192.png" alt="logo" width="60" height="60">
 					<span class="brand-text">Domaeae</span></a>
 			</div>
 
 			<nav role="navigation">
 				<div class="nav-mobile">
-					<a id="nav-toggle" href="#!">
-						<span></span></a>
+					<a id="nav-toggle" href="#"><span></span></a>
 				</div>
 				<ul class="nav-list">
 
@@ -65,8 +78,7 @@
 	</section>
 
 	<!-- 2| main => Content & Components -->
-	<main>
-
+	<main role="main">
 		<section id="content" class="content-container">
 			<h1 class="hide">Öffentliche Projekte:</h1>
 			<div class="card">
@@ -80,11 +92,71 @@
 				</section>
 			</div>
 		</section>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-6 col-md-4 card-1">
+					<div class="row">
+						<div class="col-xs-9 col-md-9 col-heading">
+							<h5>Heroku</h5>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident modi ipsum.
+							</p>
+							<a href="https://dashboard.heroku.com/apps" target="_blank" class="btn
+								btn-outline-dark">Open heroku</a>
+							<br>
+						</div>
+						<div class="col-xs-3 col-md-3 col-body">
+							<img src="assets/img/stock/heroku_logo_icon.svg" alt="" height="45">
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 card-1">
+					<div class="row">
+						<div class="col-xs-9 col-md-9 col-heading">
+							<h5>Netlify</h5>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident modi ipsum.
+							</p>
+							<a href="https://app.netlify.com/" target="_blank" class="btn btn-outline-primary">Open
+								heroku</a>
+						</div>
+						<div class="col-xs-3 col-md-3 col-body">
+							<img src="assets/img/stock/netlify_logo_icon.svg" alt="" height="45">
+						</div>
+					</div>
+					<br>
+					<br>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 card-1">
+					<div class="row">
+						<div class="col-xs-9 col-md-9 col-heading">
+							<h5>Heading</h5>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident modi ipsum.
+							</p>
+						</div>
+						<div class="col-xs-3 col-md-3 col-body">
+							<img src="assets/img/logo/android-chrome-192x192.png" alt="" height="45">
+						</div>
+						<br>
+						<br>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="footer" role="footer">
+			<h4>© Copyright | 2021 by Domaeae</h4>
+		</footer>
+
 	</main>
 
-	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+	<script src="app.js"></script>
 	<script src="./assets/js/navbar.min.js"></script>
 	<script src="./assets/js/main.js"></script>
+	<script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
 </body>
 
 </html>
