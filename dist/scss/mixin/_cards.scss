@@ -89,3 +89,38 @@
     opacity: 1;
   }
 }
+
+.card-form {
+  .card-content {
+    text-align: center;
+
+    label {
+      font-family: $font-secondary;
+      font-weight: 600;
+      display: block;
+      padding-top: 15px;
+    }
+
+    input {
+      width: 245px;
+      padding: 0.35em 0.4em;
+      outline: none;
+      border: 0.05em solid rgb(54, 66, 175);
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 30px;
+    }
+  }
+}
+
+.card-alert {
+  font-family: $font-secondary;
+  font-size: 0.85em;
+  width: 45%;
+  background: red;
+  padding: 0.34em 1em;
+  border-radius: 9px;
+  border: 0.15em solid rgb(255, 69, 171);
+  margin: 17px auto 0 auto;
+}
