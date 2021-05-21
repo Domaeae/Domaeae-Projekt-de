@@ -69,3 +69,21 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint) {
+  .card-content form {
+    .form-group {
+      display: block;
+      width: 100%;
+
+      p {
+        display: block;
+        width: 100%;
+        label {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}

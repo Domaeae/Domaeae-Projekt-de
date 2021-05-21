@@ -1,12 +1,13 @@
 // ---< domaeae.de <|> master.css > ----
 $font-heading: "Ubuntu", sans-serif;
 $font-primary: "Comfortaa", serif;
-$font-secondary: "Mu  li", sans-serif;
+$font-secondary: "Muli", sans-serif;
 // -- -<>-  ---
 @import "mixin/_colors.scss";
 @import "mixin/var.scss";
 @import "layout/responsive.scss";
 @import "layout/container.scss";
+@import "layout/layout.scss";
 // --- <> ----
 
 body,
@@ -108,6 +109,15 @@ main {
       // }
     }
   }
+}
+
+// Footer
+.footer {
+  position: relative;
+  line-height: 37px;
+  // bottom: calc(0 - 37px);
+  top: 100%;
+  left: 0;
 }
 
 // end

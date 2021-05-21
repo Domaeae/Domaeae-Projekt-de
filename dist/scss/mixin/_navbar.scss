@@ -13,14 +13,14 @@
 
   a,
   a:visited {
-    font-family: $font-heading !important;
+    font-family: $font-secondary !important;
     text-decoration: none;
     font-weight: 400;
     color: $nav-brand-color;
   }
 
   .title {
-    font-family: $font-heading !important;
+    font-family: $font-secondary !important;
     // color: color(color-primary);
     display: inline-flex;
     font-size: 1.5em;
@@ -35,7 +35,7 @@
     }
 
     .brand-text {
-      font-family: $font-heading;
+      font-family: $font-secondary;
       font-weight: 500;
       letter-spacing: normal;
       padding: 0 0 0 7px;
