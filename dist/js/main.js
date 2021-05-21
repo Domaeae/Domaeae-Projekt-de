@@ -12,9 +12,6 @@ $(function () {
   let vwidth = $(window).width();
   console.log(vheight);
   console.log(vwidth);
-  modal.css({
-    "display": "block"
-  });
 
 
   function toggleClass() {
