@@ -95,6 +95,9 @@
     text-align: center;
 
     label {
+      width: 225px;
+      text-align: left;
+      margin: 0 auto;
       font-family: $font-secondary;
       font-weight: 600;
       display: block;
@@ -102,14 +105,26 @@
     }
 
     input {
-      width: 245px;
-      padding: 0.35em 0.4em;
+      width: 225px;
+      padding: 0.35em 0.35em;
       outline: none;
-      border: 0.05em solid rgb(54, 66, 175);
-      border-radius: 4px;
+      font-family: $font-secondary;
+      border: 0;
+      border-bottom: 0.05em solid rgb(54, 66, 175);
+      // border-radius: 1px;
+      transition: all 210ms ease-in;
+
+      &:focus {
+        border-color: color(color-dark);
+        border-width: 0.1em;
+        width: calc(225px + 0.6em);
+        padding: 0.35em 0.65em;
+        // border-width: 0.1em;
+      }
     }
+
     button {
-      margin-top: 30px;
+      margin-top: 35px;
     }
   }
 }

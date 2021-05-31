@@ -78,8 +78,8 @@ button.btn {
 
 .btn-outline-primary {
   background-color: transparent;
-  color: color(md3);
-  border: 0.06rem solid color(md3) !important;
+  color: color(md2);
+  border: 0.06rem solid color(md2) !important;
 }
 
 .btn-outline-primary:hover {
@@ -546,5 +546,39 @@ $lg: new-breakpoint(min-width 1024px);
 
   100% {
     transform: scale(1);
+  }
+}
+
+.ripple-effect {
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  background-color: #ddd;
+  display: block;
+  padding: 14px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50rem;
+    background-color: red;
+    animation: rippleEffect 0.75s linear infinite;
+  }
+}
+
+@keyframes rippleEffect {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  to {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
   }
 }

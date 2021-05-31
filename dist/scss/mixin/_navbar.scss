@@ -235,6 +235,28 @@ nav {
   }
 }
 
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+
+  & * {
+    z-index: 9999;
+  }
+
+  animation: navslidein 0.5s ease-in;
+}
+
+@keyframes navslidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 // Page content
 article {
   max-width: $content-width;

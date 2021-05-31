@@ -3,6 +3,22 @@ $(function () {
   const btn_submit = $('.form-submit');
   const btn_md = $('.btn-md');
   const modal = $('.modal-section');
+  const buttons = document.querySelectorAll('.ripple-effect');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      const ANIMATION_SPEED = 750;
+      let x = e.clientX - e.target.offsetLeft;
+      let y = e.clientY - e.target.offsetTop;
+      const ripple = document.createElement('div');
+      ripple.style.left = x + 'px';
+      ripple.style.top = y + 'px';
+      button.appendChild(ripple);
+      setTimeout(() => {
+        ripple.remove();
+      }, ANIMATION_SPEED);
+    });
+  });
 
 
   /* <== EVENT| Button click
@@ -10,8 +26,6 @@ $(function () {
   // TODO: ...
   let vheight = $(window).height();
   let vwidth = $(window).width();
-  console.log(vheight);
-  console.log(vwidth);
 
 
   function toggleClass() {
@@ -31,5 +45,16 @@ $(function () {
 
   btn.on("transitionend", toggleClass);
   btn.on("transitionend", addClass);
+
+  $.getScript("assets/js/navbar.min.js", function (data, textStatus, jqxhr) {});
+
+  // Navigations Functions
+  // ===============================
+  let nav_height = $('.navigation').height();
+  console.log(nav_height);
+  $("body").scroll(function () {
+
+  });
+
 
 });
