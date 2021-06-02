@@ -265,3 +265,15 @@ article {
   margin: 0 auto;
   padding: 10px;
 }
+
+.link-member {
+  .md-show {
+    display: none;
+  }
+
+  @media only screen and (max-width: 798px) {
+    .md-show {
+      display: inline;
+    }
+  }
+}
