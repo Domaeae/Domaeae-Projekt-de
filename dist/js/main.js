@@ -4,6 +4,10 @@ $(function () {
   const btn_md = $('.btn-md');
   const modal = $('.modal-section');
   const buttons = document.querySelectorAll('.ripple-effect');
+  const $navbar_fix = $('.nav-fixed-main');
+  const $navbar_height = $('.navigation').height();
+
+  console.log($navbar_fix);
 
   buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -52,9 +56,13 @@ $(function () {
   // ===============================
   let nav_height = $('.navigation').height();
   console.log(nav_height);
-  $("body").scroll(function () {
+  $("body").scroll(function () {});
 
-  });
+  function navbar_fixer() {
+    $('main').css('padding-top', $navbar_fix);
+  }
+
+
 
 
 });

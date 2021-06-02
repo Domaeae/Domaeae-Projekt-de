@@ -32,7 +32,8 @@
 </head>
 
 <body>
-	<section class="modal-section">
+	<!-- TODO: Add a Modal | -->
+	<!-- <section class="modal-section">
 		<div class="modal">
 			&nbsp;
 			<div class=" modal-container">
@@ -57,11 +58,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<!-- 1| Full-Respons. Navbar -->
-	<section class="navigation">
+	<section class="navigation" role="navigation">
 		<div class="nav-container">
 			<div class="brand">
 				<!-- <a href="#!" class="title">Domaeae.de</a> -->
@@ -96,8 +97,11 @@
 						<a href="./sites/kontakt.html">Kontakt &nbsp;<i class='bx bx-mail-send bx-fw'></i>
 						</a>
 					</li>
-					<li>
-						<a href="./sites/member.html">&nbsp;<i class='bx bx-user-circle bx-fw'></i></a>
+					<li class="link link-member">
+						<a href="./sites/member.html">
+							&nbsp;
+							<i class='bx bx-user-circle bx-fw'></i>
+							<span class="md-show">Kundenbereich</span></a>
 					</li>
 				</ul>
 			</nav>
@@ -112,10 +116,11 @@
 				<section class="card-content">
 					<h3>Lorem Ipsum</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aperiam voluptatibus ipsam nisi
-						velit vitae voluptas consectetur id dolorum repudiandae ipsa saepe dolores, enim eaque nulla
-						harum. Aliquid ad quae aspernatur explicabo quia et eos temporibus rerum ut corporis, ipsa,
-						magnam consectetur doloribus. Nemo, incidunt adipisci. Officiis voluptatibus incidunt voluptate
-						sequi sunt amet laudantium dolorem?</p>
+						velit vitae voluptas consectetur sequi sunt amet laudantium dolorem?</p>
+
+					<section class="timer-container">
+						<div id="countdown"></div>
+					</section>
 				</section>
 			</div>
 		</section>
@@ -195,7 +200,31 @@
 	<!-- <script src="app.js"></script> -->
 	<!-- <script src="./assets/js/navbar.min.js"></script> -->
 	<script src="./assets/js/main.js"></script>
-	<!-- <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script> -->
+	<!-- <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script> -->+
+	<script>
+		function startTimer() {
+			const difference = +new Date("2025-01-01") - +new Date();
+			let remaining = "Time's up!";
+
+			if (difference > 0) {
+				const parts = {
+					days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+					hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+					minutes: Math.floor((difference / 1000 / 60) % 60),
+					seconds: Math.floor((difference / 1000) % 60),
+				};
+				remaining = Object.keys(parts).map(part => {
+					return `${parts[part]} ${part}`;
+				}).join(" ");
+			}
+
+			document.getElementById("countdown").innerHTML = remaining;
+		}
+		startTimer();
+
+		setInterval(startTimer, 1000);
+
+	</script>
 </body>
 
 </html>
