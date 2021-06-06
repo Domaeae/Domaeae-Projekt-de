@@ -169,13 +169,6 @@
 					<div class="row">
 						<div class="col-xs-9 col-md-9 col-heading">
 							<h5>Heading</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident modi ipsum.
-							</p>
-
-							<a href="https://app.domaeae.de/" target="_blank" class="btn-md btn-md-primary">Open
-								Modal</a>
-
-							<a href="#!" class="btn-md btn-md-primary">Some Button</a>
 
 						</div>
 						<div class="col-xs-3 col-md-3 col-body">
@@ -206,27 +199,7 @@
 	<script src="./assets/js/main.js"></script>
 	<!-- <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script> -->+
 	<script>
-		function startTimer() {
-			const difference = +new Date("2025-01-01") - +new Date();
-			let remaining = "Time's up!";
 
-			if (difference > 0) {
-				const parts = {
-					days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-					hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-					minutes: Math.floor((difference / 1000 / 60) % 60),
-					seconds: Math.floor((difference / 1000) % 60),
-				};
-				remaining = Object.keys(parts).map(part => {
-					return `${parts[part]} ${part}`;
-				}).join(" ");
-			}
-
-			document.getElementById("countdown").innerHTML = remaining;
-		}
-		startTimer();
-
-		setInterval(startTimer, 1000);
 
 	</script>
 </body>
