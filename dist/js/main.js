@@ -9,7 +9,30 @@ $(function () {
   const $navbar_fix = $('.nav-fixed-main');
   const $navbar_height = $('.navigation').height();
 
+  const $navbar_dropdown = $("nav ul li a:not(:only-child)");
+
+
+  $navbar_dropdown.click(function (e) {
+    $(this).siblings(".nav-dropdown").toggle();
+    $(".nav-dropdown").not($(this).siblings()).hide();
+    e.stopPropagation();
+  });
+
+  $("html").click(function () {
+    $(".nav-dropdown").hide();
+  });
+
+  $("#nav-toggle").click(function () {
+    $("nav ul").slideToggle();
+  });
+
+  $("#nav-toggle").on("click", function () {
+    this.classList.toggle("active");
+  });
+
+
   console.log($navbar_fix);
+
 
   buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
