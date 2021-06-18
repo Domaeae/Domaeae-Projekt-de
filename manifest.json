@@ -1,0 +1,21 @@
+{
+    "name": "Domaeae.de",
+    "short_name": "Domaeae",
+    "theme_color": "#2a5dd0",
+    "background_color": "#2a5dd0",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [{
+            "src": "./android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
