@@ -31,7 +31,7 @@ $(function () {
   });
 
 
-  console.log($navbar_fix);
+  // console.log($navbar_fix);
 
 
   buttons.forEach((button) => {
@@ -79,8 +79,8 @@ $(function () {
 
   // Navigations Functions
   // ===============================
-  let nav_height = $('.navigation').height();
-  console.log(nav_height);
+  // let nav_height = $('.navigation').height();
+  // console.log(nav_height);
   $("body").scroll(function () {});
 
   function navbar_fixer() {
@@ -113,57 +113,57 @@ $(function () {
   startTimer();
 
 
-  var el = document.getElementById('graph'); // get canvas
+  // var el = document.getElementById('graph'); // get canvas
 
-  var options = {
-    percent: el.getAttribute('data-percent') || 25,
-    size: el.getAttribute('data-size') || 220,
-    lineWidth: el.getAttribute('data-line') || 15,
-    rotate: el.getAttribute('data-rotate') || 0
-  }
+  // var options = {
+  //   percent: el.getAttribute('data-percent') || 25,
+  //   size: el.getAttribute('data-size') || 220,
+  //   lineWidth: el.getAttribute('data-line') || 15,
+  //   rotate: el.getAttribute('data-rotate') || 0
+  // }
 
-  var canvas = document.createElement('canvas');
-  var span = document.createElement('span');
-  span.textContent = options.percent + '%';
+  // var canvas = document.createElement('canvas');
+  // var span = document.createElement('span');
+  // span.textContent = options.percent + '%';
 
-  if (typeof (G_vmlCanvasManager) !== 'undefined') {
-    G_vmlCanvasManager.initElement(canvas);
-  }
+  // if (typeof (G_vmlCanvasManager) !== 'undefined') {
+  //   G_vmlCanvasManager.initElement(canvas);
+  // }
 
-  var ctx = canvas.getContext('2d');
-  canvas.width = canvas.height = options.size;
+  // var ctx = canvas.getContext('2d');
+  // canvas.width = canvas.height = options.size;
 
-  el.appendChild(span);
-  el.appendChild(canvas);
+  // el.appendChild(span);
+  // el.appendChild(canvas);
 
-  ctx.translate(options.size / 2, options.size / 2); // change center
-  ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
+  // ctx.translate(options.size / 2, options.size / 2); // change center
+  // ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
 
-  //imd = ctx.getImageData(0, 0, 240, 240);
-  var radius = (options.size - options.lineWidth) / 2;
+  // //imd = ctx.getImageData(0, 0, 240, 240);
+  // var radius = (options.size - options.lineWidth) / 2;
 
-  var drawCircle = function (color, lineWidth, percent) {
-    percent = Math.min(Math.max(0, percent || 1), 1);
-    ctx.beginPath();
-    ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
-    ctx.strokeStyle = color;
-    ctx.lineCap = 'round'; // butt, round or square
-    ctx.lineWidth = lineWidth
-    ctx.stroke();
-  };
+  // var drawCircle = function (color, lineWidth, percent) {
+  //   percent = Math.min(Math.max(0, percent || 1), 1);
+  //   ctx.beginPath();
+  //   ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
+  //   ctx.strokeStyle = color;
+  //   ctx.lineCap = 'round'; // butt, round or square
+  //   ctx.lineWidth = lineWidth
+  //   ctx.stroke();
+  // };
 
-  drawCircle('#efefef', options.lineWidth, 100 / 100);
-  drawCircle('#555555', options.lineWidth, options.percent / 100);
-
-
-  function updateChart() {
-    let xy = time_min;
-    $('.chart').attr('data-percent', "50");
-    console.log($('.chart').attr('data-percent'));
-  };
+  // drawCircle('#efefef', options.lineWidth, 100 / 100);
+  // drawCircle('#555555', options.lineWidth, options.percent / 100);
 
 
+  // function updateChart() {
+  //   let xy = time_min;
+  //   $('.chart').attr('data-percent', "50");
+  //   console.log($('.chart').attr('data-percent'));
+  // };
 
-  setInterval(startTimer, 1000);
-  setInterval(updateChart(), 1000);
+
+
+  // setInterval(startTimer, 1000);
+  // setInterval(updateChart(), 1000);
 });
