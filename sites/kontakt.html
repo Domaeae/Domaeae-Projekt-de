@@ -1,137 +1,106 @@
 <!DOCTYPE html>
-<html lang="de" data-color-mode="dark" data-dark-theme="dark_dimmed">
+<html lang="de">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>domaeae|de</title>
-  <meta name="theme-color" content="#121212">
-  <!-- MetaTags -->
-  <!-- Primary Meta Tags -->
-  <title>Domaeae - Entwicklerseite</title>
-  <meta name="title" content="Domaeae - Entwicklerseite">
-  <meta name="description" content="Meine Entwicklerseite mit Projekten, Quellcodes und weitere informationen">
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://domaeae.de/">
-  <meta property="og:title" content="Domaeae - Entwicklerseite">
-  <meta property="og:description" content="Meine Entwicklerseite mit Projekten, Quellcodes und weitere informationen">
-  <meta property="og:image" content="./dist/img/android-chrome-512x512.png">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://domaeae.de/">
-  <meta property="twitter:title" content="Domaeae - Entwicklerseite">
-  <meta property="twitter:description"
-    content="Meine Entwicklerseite mit Projekten, Quellcodes und weitere informationen">
-  <meta property="twitter:image" content="./dist/img/android-chrome-512x512.png">
-  <!-- Imports -->
-  <link rel="stylesheet" href="../assets/css/master.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,500,600,700">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
-  <!-- <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet"/> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Domaeae - Meine Projekte</title>
+    <meta name="theme-color" content="#999999" />
+
+    <!-- - links & Scripts - -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,500,600,700">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
 </head>
 
-<body class="body vheight-3">
+<body>
 
-  <!-- 1| Full-Respons. Navbar -->
-  <section class="navigation  nav-fixed">
-    <div class="nav-container">
-      <div class="brand">
-        <!-- <a href="#!" class="title">Domaeae.de</a> -->
-        <!-- <a href="#!" class="title"><img src="./assets/img/logo/domaeae-wide-white.png" alt="logo"></a> -->
-        <a href="../index.html" class="title">
-          <img src="../assets/img/logo/android-chrome-192x192.png" alt="logo" role="img" width="60" height="60">
-          <span class="brand-text">Domaeae</span></a>
-      </div>
-
-      <nav role="navigation">
-        <div class="nav-mobile">
-          <a id="nav-toggle" href="#!">
-            <span></span></a>
-        </div>
-        <ul class="nav-list">
-
-          <li>
-            <a href="../index.html">
-              <!-- <i class='bx bx-home-alt bx-fw'></i> --><i class='bx bxs-home bx-fw'></i>Home</a>
-          </li>
-
-          <li>
-            <a href="#">Projekte</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="https://github.com/Domaeae" target="_blank">
-                  <i class='bx bxs-cloud bx-fw'></i>Github Profil</a>
-              </li>
-              <!-- <li> <a href="#!"><i class='bx bxs-cloud bx-fw'></i>cloudHosting</a></li> <li> -->
-            </ul>
-          </li>
-          <li>
-            <a href="./kontakt.html" class="active">Kontakt &nbsp;<i class='bx bx-mail-send bx-fw'></i></a></li>
-          <li>
-            <a href="./member.html" class="">&nbsp;<i class='bx bx-user-circle bx-fw'></i></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-
-  <!-- 2| main => Content & Components -->
-  <main class="nav-fixed-main">
-    <section id="content">
-      <h2 class="content-heading">Kontakt</h2>
-
-      <div class="card">
-        <section class="card-content">
-
-          <form name="contact" data-netlify="true" method="POST" action="/success">
-            <!-- <form name="contact" method="POST" data-netlify="true" action="/success"> -->
-
-            <div class="form-group" style="display: inline-flex;">
-
-              <p style="padding-right: 15px;">
-                <label>Vorname: <input type="text" name="Vorname" autocomplete="given-name" /></label>
-              </p>
-              <p>
-                <label>Nachname: <input type="text" name="name" autocomplete="family-name" /></label>
-              </p>
+    <!-- 1| Full-Respons. Navbar -->
+    <section class="navigation" role="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!" class="title">
+                    <img src="./assets/img/android-chrome-192x192.png" alt="logo" width="60" height="60">
+                    <span class="brand-text">Domaeae</span></a>
             </div>
-            <p>
-              <label>Email:&nbsp;<input type="email" name="email" autocomplete="email"
-                  style="margin-left: 15px;" /></label>
-            </p>
-            <p>
-              <label>Deine Nachricht: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-              <div class="btn-container">
-                <button class="form-button">
-                  <span class="form-submit">Senden</span>
-                  <span class="form-loading"><i class='bx bx-loader-alt'></i></span>
-                  <span class="form-check"><i class='bx bx-check-double'></i></span>
-                </button>
-              </div>
-              <a href="#" class="ripple-effect" style="width: 115px;">Ripple Effect</a>
-            </p>
-          </form>
 
+            <nav role="navigation">
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#"><span></span></a>
+                </div>
+                <ul class="nav-list">
 
-        </section>
-      </div>
+                    <li>
+                        <a href="https://domaeae.de" class="">
+                            <!-- <i class='bx bx-home-alt bx-fw'></i> --><i class='bx bxs-home bx-fw'></i>Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="">Projekte</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="./sites/portfolio.html">
+                                    <i class='bx bxs-spreadsheet bx-fw'></i>Portfolio </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Domaeae" target="_blank">
+                                    <i class='bx bxs-cloud bx-fw'></i>Github Profil</a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/Domaeae" target="_blank">
+                                    <i class='bx bxl-codepen bx-fw'></i>Codepen Profil</a>
+                            </li>
+                            <!-- <li> <a href="#!"><i class='bx bxs-cloud bx-fw'></i>cloudHosting</a></li> <li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Kontakt &nbsp;<i class='bx bx-mail-send bx-fw'></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
-  </main>
 
-  <!-- <a href="#!" class="bsbtn bsbtn-primary bsbtn-mx">Primary Button used for nothing.</a> -->
+    <!-- 2| main => Content & Components -->
+    <main role="main">
+        <section id="content" class="content-container">
+            <h1 class="">Impressum</h1>
+            <div class="card">
+                <section class="card-content">
+                    <h3>Dominik Girrbach</h3>
+                    <p>Beethovenstraße 10,</p>
+                    <p>68753, Waghäusel</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  <!-- TODO: "main.jS into assets/.." -->
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/navbar.js"></script>
-  <!-- <script src="../assets/js/navbar.min.js"></script> -->
+                    <section class="impressum-gmaps">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.6020621582734!2d8.523881315599553!3d49.22707348263039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797bab894025139%3A0x423ee078a5eea98e!2sBeethovenstra%C3%9Fe%2010%2C%2068753%20Wagh%C3%A4usel!5e0!3m2!1sde!2sde!4v1634424654737!5m2!1sde!2sde"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </section>
+
+                    <section class="impressum-links">
+                        
+                        <a href="mailto:admin@domaeae.de">Admin@domaeae.de</a>
+
+                    </section>
+
+
+                    </section>
+                </div>
+        </section>
+
+
+
+
+        <!-- Javascript adding -->
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
