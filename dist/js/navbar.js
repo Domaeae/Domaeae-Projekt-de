@@ -9,10 +9,10 @@ $(document).ready(function () {
 
 
 
-  $nav_contact.click(function (e) {
-    e.preventDefault();
-    window.open('../../sites/kontakt.html', '_blank');
-  });
+  // $nav_contact.click(function (e) {
+  //   e.preventDefault();
+  //   window.open('../../sites/kontakt.html', '_blank');
+  // });
 
 
 
